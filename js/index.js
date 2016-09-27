@@ -31,5 +31,5 @@ window.onload = function() {
 			}
 		},
 		transitionEnd: function(index, elem) {}
-	})
-}
+	});
+};
