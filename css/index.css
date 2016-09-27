@@ -1,0 +1,496 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	font-family: 'PingFang SC', 'SF UI Text', 'Hiragino Sans GB', 'Microsoft Yahei', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: : none;
+}
+
+.wrap {
+	width: 100%;
+}
+
+.header {
+	width 100%;
+	height: 700px;
+	background-image: linear-gradient(180deg, #69D2FD 0%, #38A6F9 100%);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.header>div {
+	display: inline-block;
+	width: 512px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.header .hero {
+	position: relative;
+}
+
+.header .hero .intro {
+	position: absolute;
+	top: 250px;
+	left: 50px;
+	width: 450px;
+	height: 130px;
+	text-align: left;
+}
+
+.header .hero .intro .desc {
+	color: white;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.header .hero .intro .icon {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	background-image: url(https://dn-catchinc.qbox.me/yep_icon_rounded.svg);
+	background-size: 100%;
+}
+
+.header .hero .intro .name {
+	font-size: 64px;
+	line-height: 80px;
+	color: white;
+	display: inline-block;
+	font-weight: 300;
+	vertical-align: top;
+	height: 80px;
+	margin-left: 20px;
+}
+
+.header .device {
+	position: relative;
+}
+
+.header .device .iphone {
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	width: 432px;
+	height: 881px;
+	background-image: url(https://dn-catchinc.qbox.me/iphone6_silver.svg);
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position: top right;
+}
+
+.header .device .iphone #screen {
+	position: absolute;
+	right: 21px;
+	top: 80px;
+	width: 281px;
+	height: 500px;
+}
+
+
+/*swip所需要的css*/
+
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+
+.swipe-wrap>li,
+.swipe-wrap> div {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+
+/*swip所需要的css*/
+
+.header .device .iphone #screen .swipe-wrap .img {
+	width: 281px;
+	height: 500px;
+	background-size: 100%;
+}
+
+.header .hero .download {
+	position: absolute;
+	top: 500px;
+	left: 50px;
+	width: 450px;
+	height: 60px;
+}
+
+.header .hero .download a {
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	float: left;
+}
+
+.header .hero .download a.ios {
+	background-image: url(https://dn-catchinc.qbox.me/button_ios.svg);
+}
+
+.header .hero .download a.android {
+	background-image: url(https://dn-catchinc.qbox.me/button_soon.svg);
+	margin-left: 50px;
+}
+
+.main .swipe {
+	height: 0;
+}
+
+.main .swipe ul.swipe-wrap {
+	width: 100%;
+}
+
+.main .swipe ul.swipe-wrap li {
+	text-align: center;
+}
+
+.main .swipe ul.swipe-wrap li .feature {
+	margin: 50px auto;
+	width: 85%;
+	box-shadow: 0px 10px 10px 0px #000;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+	padding: 40px 0;
+	overflow: hidden;
+}
+
+.swipe {
+	overflow: hidden;
+	position: relative;
+}
+
+.main .features {
+	white-space: nowrap;
+	margin: 50px 0 0;
+	overflow: hidden;
+}
+
+.main .features ul {
+	text-align: center;
+}
+
+.main .features ul li {
+	display: inline-block;
+	margin: 20px;
+}
+
+.main .swipe img,
+.feature img {
+	width: 300px;
+	height: 250px;
+}
+
+.main .swipe h1,
+.main .features h1 {
+	font-size: 36px;
+	color: #38A6F9;
+	line-height: 50px;
+}
+
+.main .swipe h2,
+.main .features h2 {
+	font-size: 18px;
+	color: #808080;
+	line-height: 24px;
+	margin-top: 10px;
+	white-space: nowrap;
+}
+
+.main .dots {
+	display: none;
+	text-align: center;
+	font-size: 0;
+	margin: 10px auto;
+	margin-top: -30px;
+	margin-bottom: 30px
+}
+
+.main .dots .dot {
+	width: 7px;
+	height: 7px;
+	background-color: #4d4d4d;
+	border-radius: 50%;
+	margin: 4.5px;
+	display: inline-block;
+}
+
+.main .dots .dot:not(.active) {
+	opacity: 0.45;
+}
+
+.main .top {
+	width: 50px;
+	height: 50px;
+	margin: 60px auto;
+	background-image: url(https://dn-catchinc.qbox.me/icon_scrolltop.svg);
+	background-repeat: no-repeat;
+}
+
+.footer {
+	width: 100%;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+.footer .ghbtns {
+	text-align: center;
+	margin: 20px 0;
+	padding-left: 40px;
+}
+
+.footer .ghbtns iframe {
+	width: 130px;
+	height: 20px;
+}
+
+.footer .links {
+	white-space: nowrap;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.footer .links a {
+	color: #38A6F9;
+	text-decoration: none;
+	margin: 0 20px;
+}
+
+.footer .copyright {
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	color: #bfbfbf;
+}
+
+
+/*屏幕小于1024px*/
+
+@media screen and (max-width: 1024px) {
+	.header .hero {
+		width: 50%;
+		overflow: visible;
+	}
+	.hero .intro .desc {
+		font-size: 22px;
+	}
+	.header .device {
+		width: 50%;
+	}
+	.header .hero .download {
+		white-space: normal;
+		overflow: auto;
+		height: auto;
+		width: 100%;
+		top: 450px;
+	}
+	.header .hero .download a {
+		display: inline-block;
+		margin: 10px;
+		margin-left: 0px;
+		margin-right: 20px;
+	}
+	.header .hero .download a.android {
+		margin-left: 0px;
+	}
+	.main .features {
+		zoom: 75%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.header {
+		height: 470px;
+		padding-bottom: 130px;
+		height: auto;
+	}
+	.header .hero {
+		width: 100%;
+	}
+	.header .hero .intro {
+		position: static;
+		width: 100%;
+		text-align: center;
+		height: auto;
+		margin-top: 40px;
+	}
+	.header .hero .intro .desc {
+		display: block;
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	.header .hero .intro .icon {
+		width: 100px;
+		height: 100px;
+		display: block;
+		margin: 0 auto;
+		background-repeat: no-repeat;
+	}
+	.header .hero .intro .name {
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		line-height: 1;
+		height: auto;
+		font-size: 32px;
+	}
+	.header .hero .download {
+		position: static;
+		margin-top: 40px;
+		width: 100%;
+		text-align: center;
+		height: auto;
+		overflow: auto;
+		white-space: normal;
+	}
+	.header .hero .download a {
+		float: none;
+		margin: 10px
+	}
+	.header .hero .download a.android {
+		margin: 10px
+	}
+	.device {
+		display: none;
+	}
+	.main .features,
+	.main .top {
+		display: none;
+	}
+	.main .swipe {
+		height: auto;
+		margin-top: -150px;
+	}
+	.main .dots {
+		display: block;
+	}
+	.footer .ghbtns {
+		padding-left: 10px;
+	}
+	.footer .links {
+		padding: 0;
+	}
+	.footer .copyright {
+		font-size: 12px;
+		padding: 10px 0;
+	}
+	.footer .ghbtns iframe {
+		width: 100px;
+	}
+	.footer .links a {
+		margin: 10px;
+	}
+}
