@@ -408,7 +408,7 @@ ol,ul {
 		zoom: 75%;
 	}
 }
-
+/*屏幕小于768px*/
 @media screen and (max-width:768px) {
 	.header {
 		height: 470px;
